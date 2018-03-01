@@ -89,11 +89,6 @@ class SwefLogin extends \Swef\Bespoke\Plugin {
             }
         }
         $this->page->diagnosticAdd ('Intervening in context '.$this->page->swef->context[SWEF_COL_CONTEXT]);
-        $this->page->diagnosticAdd ('Setting template = '.$this->config[SWEF_COL_TEMPLATE]);
-        $this->page->template = array (
-            SWEF_COL_TEMPLATE     =>$this->config[SWEF_COL_TEMPLATE]
-           ,SWEF_COL_CONTENTTYPE  =>$this->config[SWEF_COL_CONTENTTYPE]
-        );
         $this->page->diagnosticAdd ('Inserting login form '.sweflogin_file_login);
         require sweflogin_file_login;
         return SWEF_BOOL_FALSE;
