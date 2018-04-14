@@ -2,14 +2,14 @@
     <div id="sweflogin-login" class="content">
 
       <form class="login" method="post" action="">
-        <input type="hidden" name="<?php echo htmlentities (sweflogin_form_posted); ?>" value="1" />
+        <input type="hidden" name="<?php echo htmlspecialchars (sweflogin_form_posted); ?>" value="1" />
         <div class="input">
           <label for="sweflogin-email"><t en>Email</t></label>
-          <input id="<?php echo htmlentities (sweflogin_form_email); ?>" type="email" required="required" name="<?php echo htmlentities(sweflogin_form_email); ?>" autofocus="autofocus" onfocus="this.select()" />
+          <input id="<?php echo htmlspecialchars (sweflogin_form_email); ?>" type="email" required="required" name="<?php echo htmlspecialchars(sweflogin_form_email); ?>" autofocus="autofocus" onfocus="this.select()" />
         </div>
         <div class="input">
           <label for="sweflogin-password"><t en>Password</t></label>
-          <input id="<?php echo htmlentities(sweflogin_form_password); ?>" type="password" required="required" name="<?php echo htmlentities (sweflogin_form_password); ?>" onfocus="this.select()" />
+          <input id="<?php echo htmlspecialchars(sweflogin_form_password); ?>" type="password" required="required" name="<?php echo htmlspecialchars (sweflogin_form_password); ?>" onfocus="this.select()" />
         </div>
         <div class="input">
           <label>&nbsp;</label>
